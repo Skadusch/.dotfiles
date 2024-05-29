@@ -1,7 +1,7 @@
 # Dotfiles
 
 ## Neovim
-iNeovim Config
+Neovim Config
 
 More or less a Backup, no warranty that it works.
 
