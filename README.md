@@ -9,10 +9,10 @@ Made in Windows. 😭
 
 Requires: (need to check, not really sure)
 
-    npm
-    lua/luarocks
-    .NET
-    ripgrep
+- npm
+- lua/luarocks
+- .NET
+- ripgrep
 
 "Neovim IDE with Lazy Plugin Manager."
 
@@ -32,10 +32,9 @@ This creates a directory ".vim/undodir" in you current path to store the undofil
 
 ### Links:
 
-    Neovim: https://neovim.io/
-    Lazy Plugin Manager: https://github.com/folke/lazy.nvim
-    ThePrimeagen init.lua: https://github.com/ThePrimeagen/init.lua
-
+- Neovim: https://neovim.io/
+- Lazy Plugin Manager: https://github.com/folke/lazy.nvim
+- ThePrimeagen init.lua: https://github.com/ThePrimeagen/init.lua
 
 ## Tmux Config
 
