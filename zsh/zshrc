@@ -110,3 +110,8 @@ alias gs="git status"
 alias ga="git add ."
 
 alias ff="fastfetch"
+
+mkcd () {
+    mkdir -p $1
+    cd $1
+}
