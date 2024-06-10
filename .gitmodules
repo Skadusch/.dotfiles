@@ -2,3 +2,6 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
+[submodule "config/tmux/plugins/tmux-sensible"]
+	path = config/tmux/plugins/tmux-sensible
+	url = https://github.com/tmux-plugins/tmux-sensible.git
