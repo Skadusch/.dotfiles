@@ -109,9 +109,20 @@ alias vim="nvim"
 alias gs="git status"
 alias ga="git add ."
 
+alias cd..="cd .."
+alias cd....="cd ../.."
+
 alias ff="fastfetch"
 
 mkcd () {
     mkdir -p $1
     cd $1
 }
+
+source <(fzf --zsh)
+
+HISTFILE=~/.zsh_history
+HISTSIZE=5000
+SAVEHIST=5000
+
+setopt appendhistory

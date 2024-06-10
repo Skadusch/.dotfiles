@@ -34,6 +34,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+exec_always --no-startup-id picom -bc
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -204,6 +206,11 @@ gaps inner 10px
 gaps outer 1px 
 
 
+# Border
+
+default_border none
+
+
 # Close Plasma Desktop
 for_window [title="Arbeitsfläche @ QRect.*"] kill; floating enable; border none
 
@@ -225,7 +232,7 @@ for_window [class="(?i)*nextcloud*"] floating disable
 for_window [class="plasmashell" window_type="notification"] border none, move position 70 ppt 81 ppt
 no_focus [class="plasmashell" window_type="notification"]
 
-exec --no-startup-id feh --bg-scale /usr/share/wallpapers/Next/contents/images_dark/2560x1440.png
+exec --no-startup-id feh --bg-scale /home/skaduschler/Media/Bilder/background/night-lake.jpg
 
 exec keepassxc 
 exec discord 
@@ -238,6 +245,9 @@ assign [class="konsole"] 1
 assign [class="firefox"] 2
 
 assign [class="discord"] 3
+
+assign [class="steam"] 4
+assign [class="heroic"] 4
 
 assign [class="KeePassXC"] 10
 assign [class="obsidian"] 10
