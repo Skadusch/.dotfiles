@@ -2,17 +2,17 @@ vim.g.mapleader = " "
 
 -- Set filetype for xaml
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
-	pattern = { "*.xaml" },
-	command = ":set filetype=xml",
+    pattern = { "*.xaml" },
+    command = ":set filetype=xml",
 })
 -- highlight yanked text
 vim.api.nvim_create_autocmd("TextYankPost", {
-	group = vim.api.nvim_create_augroup("highlight_yank", {}),
-	desc = "Hightlight selection on yank",
-	pattern = "*",
-	callback = function()
-		vim.highlight.on_yank({ higroup = "IncSearch", timeout = 150 })
-	end,
+    group = vim.api.nvim_create_augroup("highlight_yank", {}),
+    desc = "Hightlight selection on yank",
+    pattern = "*",
+    callback = function()
+        vim.highlight.on_yank({ higroup = "IncSearch", timeout = 150 })
+    end,
 })
 
 vim.opt.tabstop = 4
@@ -34,7 +34,7 @@ vim.opt.wrap = false
 
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = ".vim/undodir"
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
 
 vim.opt.hlsearch = false

@@ -1,0 +1,23 @@
+- defaults:
+    link:
+      relink: true
+      force: true
+
+- clean: ['~']
+
+- create: 
+    - ~/.vim/undodir
+
+- link:
+    ~/.config/i3:
+      path: config/i3
+    ~/.config/nvim:
+      path: config/nvim
+    ~/.config/tmux:
+      path: config/tmux
+    ~/.Xmodmap: Xmodmap
+    ~/.nvidia-settings-rc: nvidia-settings-rc
+    ~/.zshrc:
+      path: zsh/zshrc
+    ~/.gitconfig: gitconfig
+    ~/i3-plasma.destop: i3-plasma.desktop
