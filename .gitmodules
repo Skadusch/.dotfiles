@@ -11,3 +11,6 @@
 [submodule "dotbot-pacman"]
 	path = modules/dotbot-pacman
 	url = https://github.com/omegarogue/dotbot-pacman
+[submodule "modules/dotbot-pacman"]
+	path = modules/dotbot-pacman
+	url = https://github.com/omegarogue/dotbot-pacman
