@@ -1,7 +1,13 @@
 [submodule "dotbot"]
-	path = dotbot
+	path = modules/dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
 [submodule "config/tmux/plugins/tmux-sensible"]
 	path = config/tmux/plugins/tmux-sensible
 	url = https://github.com/tmux-plugins/tmux-sensible.git
+[submodule "dotbot-plugins/dotbot-pacman"]
+	path = dotbot-plugins/dotbot-pacman
+	url = https://github.com/omegarogue/dotbot-pacman
+[submodule "dotbot-pacman"]
+	path = modules/dotbot-pacman
+	url = https://github.com/omegarogue/dotbot-pacman
