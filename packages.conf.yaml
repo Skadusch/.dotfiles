@@ -1,6 +1,4 @@
 - pacman:
-  - nvidia-container-toolkit
-  - nvidia-settings
   - neovim
   - zsh
   - zsh-completions
