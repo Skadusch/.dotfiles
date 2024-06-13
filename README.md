@@ -1,5 +1,12 @@
 # Dotfiles
 
+Copy paste in .dotfiles:
+
+```
+./install
+./modules/dotbot/bin/dotbot -p modules/dotbot-pacman/pacman.py -c packages.conf.yaml
+```
+
 ## Neovim
 Neovim Config
 

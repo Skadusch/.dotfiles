@@ -1,0 +1,25 @@
+- pacman:
+  - nvidia-container-toolkit
+  - nvidia-settings
+  - neovim
+  - zsh
+  - zsh-completions
+  - tmux
+  - fzf
+  - ripgrep
+  - feh
+  - syncthing
+  - discord
+  - steam
+  - wine
+  - mangohud
+  - firefox
+  - cups
+  - print-manager
+  - hplip
+  - skanlite
+  - dolphin
+  - gimp
+  - unzip
+  - zip
+  - libreoffice-still
