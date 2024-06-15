@@ -1,7 +1,10 @@
 # Dotfiles
 
-Copy paste in .dotfiles:
+Current setup uses i3 with KDE Plasma, with Xsession
 
+https://github.com/heckelson/i3-and-kde-plasma
+
+Copy paste in .dotfiles:
 ```
 ./install
 ./modules/dotbot/bin/dotbot -p modules/dotbot-pacman/pacman.py -c packages.conf.yaml
@@ -37,3 +40,12 @@ Undos for days.
 
   -  ThePrimeagen: tmux-sessionizer
 
+
+SpotX: https://spotx-official.github.io/spotx-docs/guide/advanced-guides/installation-sh
+
+I had to set the installtion path with -P.
+Spotify is installed over AUR, with yay.
+
+```
+bash <(curl -sSL https://spotx-official.github.io/run.sh) -P /opt/spotify
+```

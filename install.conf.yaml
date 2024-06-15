@@ -20,4 +20,3 @@
     ~/.zshrc:
       path: zsh/zshrc
     ~/.gitconfig: gitconfig
-    ~/i3-plasma.destop: i3-plasma.desktop

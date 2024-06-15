@@ -120,6 +120,8 @@ mkcd () {
     cd $1
 }
 
+alias orphans='[[ -n $(pacman -Qdt) ]] && sudo pacman -Rs $(pacman -Qdtq) || echo "no orphans to remove"'
+
 source <(fzf --zsh)
 
 HISTFILE=~/.zsh_history
@@ -127,3 +129,6 @@ HISTSIZE=5000
 SAVEHIST=5000
 
 setopt appendhistory
+
+# Created by `pipx` on 2024-06-15 16:50:15
+export PATH="$PATH:/home/skaduschler/.local/bin"
