@@ -4,6 +4,9 @@
 # Should you change your keyboard layout some time, delete
 # this file and re-run i3-config-wizard(1).
 #
+
+exec --no-startup-id greenclip daemon
+
 for_window [title="Arbeitsfläche @ QRect.*"] kill; floating enable; border none
 
 # Plasma compatibility improvements
@@ -80,12 +83,16 @@ bindsym $mod+Shift+q kill
 # bindsym $mod+d exec --no-startup-id krunner
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec rofi -show combi
+bindsym $mod+d exec rofi -combi-modi window#run#ssh -show combi
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
+# clipboard tool
+exec --no-startup-id greenclip daemon>/dev/null
+bindsym $mod+c exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard
+
 
 # change focus
 bindsym $mod+h focus left
@@ -269,4 +276,4 @@ assign [class="heroic"] 4
 
 assign [class="KeePassXC"] 10
 assign [class="obsidian"] 10
-
+assign [class="Yubico-authenticator"] 10

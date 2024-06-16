@@ -10,7 +10,40 @@ Copy paste in .dotfiles:
 ./modules/dotbot/bin/dotbot -p modules/dotbot-pacman/pacman.py -c packages.conf.yaml
 ```
 
+## KDE Plasma
+
+### KDE Theme
+
+https://github.com/kelpwave/Rose-pine-for-KDE
+
+#### Usage
+
+1. Go to System Settings > Appearance > Plasma Style and select `Install from File...`
+2. From the cloned directory, select the subdirectory of the variant you like most
+3. Select the `tar.gz` file of the chosen variant
+4. Move the `RosePine[Variant].colors` file from the `colorschemes` subdirectory into your ``color-schemes`` directory (by default, it should be at `~/.local/share/color-schemes`. If it doesn't exist, create it)
+5. Select the color scheme from System Settings > Appearance > Colours
+6. **[OPTIONAL]** Download `AllRosePineThemesIcons.tar.gz` from [rose-pine/gtk](https://github.com/rose-pine/gtk/releases/tag/v2.0.0), decompress it and copy the folder respective to your chosen variant into `~/.local/share/icons`, then apply the icon pack through System Settings > Appearance > Icons.
+
+### SDDM Theme
+
+Get the Theme:
+```
+git clone https://github.com/lwndhrst/sddm-rose-pine.git
+sudo mv sddm-rose-pine /usr/share/sddm/themes
+```
+
+**Make sddm use the Theme:**
+
+create sddm.conf
+```
+sudo cp /usr/lib/sddm/sddm.conf.d/default.conf /etc/sddm.conf.d/sddm.con
+```
+
+In the [Theme] section simply add the themes name: `Current=sddm-rose-pine.`
+
 ## Neovim
+
 Neovim Config
 
 More or less a Backup, no warranty that it works.

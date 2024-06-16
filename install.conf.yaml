@@ -22,3 +22,5 @@
     ~/.zshrc:
       path: zsh/zshrc
     ~/.gitconfig: gitconfig
+    ~/.local/share/plasma/desktoptheme/rose-pine-moon:
+      path: local/share/plasma/desktoptheme/rose-pine-moon
