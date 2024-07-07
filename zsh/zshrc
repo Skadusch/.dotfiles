@@ -73,7 +73,9 @@ ZSH_THEME="px-rose-pine"
 plugins=(git ssh-agent tmux)
 
 zstyle :omz:plugins:ssh-agent identities ~/.ssh/github
+zstyle :omz:plugins:ssh-agent identities ~/.ssh/id_ed25519
 zstyle :omz:plugins:ssh-agent ssh-add-args ~/.ssh/github
+zstyle :omz:plugins:ssh-agent ssh-add-args ~/.ssh/id_ed25519
 
 ZSH_TMUX_AUTOSTART=true
 
@@ -114,6 +116,8 @@ alias cd..="cd .."
 alias cd....="cd ../.."
 
 alias ff="fastfetch"
+
+alias clear-clip="rm /home/skaduschler/.cache/greenclip.history"
 
 mkcd () {
     mkdir -p $1
