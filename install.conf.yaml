@@ -24,3 +24,5 @@
     ~/.gitconfig: gitconfig
     ~/.local/share/plasma/desktoptheme/rose-pine-moon:
       path: local/share/plasma/desktoptheme/rose-pine-moon
+    ~/.config/MangoHud: 
+      path: config/MangoHud
