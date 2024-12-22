@@ -254,9 +254,17 @@ client.urgent            $text     $base $text  $love      $love
 client.placeholder       $base     $base $text  $overlay   $overlay
 client.background        $base
 
-# start some applications
-exec keepassxc 
-exec discord 
+# screen of workspace
+workspace 1 output DP-4
+workspace 2 output DP-4
+workspace 3 output HDMI-0
+workspace 4 output DP-4
+workspace 5 output DP-4
+workspace 6 output HDMI-0
+workspace 7 output HDMI-0
+workspace 8 output HDMI-0
+workspace 9 output HDMI-0
+workspace 10 output HDMI-0
 
 # workspace Routes
 assign [class="konsole"] 1
@@ -276,6 +284,10 @@ assign [class="qBittorrent"] 5
 assign [class="KeePassXC"] 10
 assign [class="Yubico-authenticator"] 10
 
+# start some applications
+exec_always --no-startup-id ~/.fehbg
+exec keepassxc 
+exec discord 
+
 exec --no-startup-id greenclip daemon
 
-exec --no-startup-id feh --bg-scale /home/skaduschler/Media/Bilder/background/rose_pine_shape.png
