@@ -285,6 +285,8 @@ assign [class="KeePassXC"] 10
 assign [class="Yubico-authenticator"] 10
 
 # start some applications
+exec --no-startup-id xrandr --output DP-4 --mode 2560x1440 --rate 144
+exec --no-startup-id xrandr --output HDMI-0 --mode 1080x1920 --rate 60
 exec_always --no-startup-id ~/.fehbg
 exec keepassxc 
 exec discord 
